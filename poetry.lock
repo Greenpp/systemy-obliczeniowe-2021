@@ -564,6 +564,14 @@ signals = ["blinker (>=1.4.0)"]
 signedtoken = ["cryptography (>=3.0.0,<4)", "pyjwt (>=2.0.0,<3)"]
 
 [[package]]
+name = "oclgrind-binary-distribution"
+version = "18.3.post2"
+description = "Oclgrind Binary Distribution to be used with PyOpenCL"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "opt-einsum"
 version = "3.3.0"
 description = "Optimizing numpys einsum function"
@@ -760,6 +768,7 @@ python-versions = "~=3.6"
 
 [package.dependencies]
 numpy = "*"
+oclgrind_binary_distribution = {version = ">=18.3", optional = true, markers = "extra == \"oclgrind\""}
 platformdirs = ">=2.2.0"
 pytools = ">=2021.2.7"
 
@@ -1203,7 +1212,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.9"
-content-hash = "94128e9ec86ae4c986ef8132f95acaca66cace4775dc5dd71dd63eef20c29714"
+content-hash = "242221228e57298f9f6dafa225d1f5b8a1b747844ba4e06ef46e97729f048cf7"
 
 [metadata.files]
 absl-py = [
@@ -1673,6 +1682,9 @@ numpy = [
 oauthlib = [
     {file = "oauthlib-3.1.1-py2.py3-none-any.whl", hash = "sha256:42bf6354c2ed8c6acb54d971fce6f88193d97297e18602a3a886603f9d7730cc"},
     {file = "oauthlib-3.1.1.tar.gz", hash = "sha256:8f0215fcc533dd8dd1bee6f4c412d4f0cd7297307d43ac61666389e3bc3198a3"},
+]
+oclgrind-binary-distribution = [
+    {file = "oclgrind_binary_distribution-18.3.post2-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:3541ffefffa15ab21c9cc5e922b3296b31508bb61a6d52534a820d3e186ecfbe"},
 ]
 opt-einsum = [
     {file = "opt_einsum-3.3.0-py3-none-any.whl", hash = "sha256:2455e59e3947d3c275477df7f5205b30635e266fe6dc300e3d9f9646bfcea147"},
